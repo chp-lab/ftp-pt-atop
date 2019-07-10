@@ -52,6 +52,16 @@ button {
 	font-size: 12px;
 }
 
+input[type=submit] {
+	background-color: #354CA6;
+	color: white;
+	padding: 2px 6px;
+	text-align: center;
+	border:2px solid gray;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
 button:hover, button:active{
 	background-color: #384A94;
 	cursor: pointer;
@@ -88,6 +98,17 @@ header.site-header {
 	border:1px solid black;
 	
 	
+}
+
+.ulogin {
+	
+	margin-right: 80px;
+	margin-top: 10px;
+	float: right;
+}
+
+#LoginBtn {
+	float: right;
 }
 
 #__main {

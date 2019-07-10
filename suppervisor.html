@@ -1,0 +1,22 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/chatpeth/symp/master/public/images/pie-chart.png">
+<link rel="stylesheet" type="text/css" href="/css/office.css">
+<title>Simple Multer Upload Example</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+	<body>
+	<h2>Suppervisor</h2>
+	
+	<form action="/upload" method="post" enctype="multipart/form-data" onsubmit="return confirm('Confirm to upload file ?');">
+	<input type="file" name="avatar">
+	<input type="submit" value="upload">
+	</form>
+
+	<form action="/login" method="GET" class="ulogin">
+    <input type="submit" id="LoginBtn" value="Logout">
+    </form>
+	</body>
+</html>
