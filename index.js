@@ -13,7 +13,7 @@ const jwtOptions = {
 }
 
 const jwtAuth = new JwtStrategy(jwtOptions, (payload, done) => {
-   if(payload.sub === "supper")
+   if(payload.sub === "super")
    {
 	   done(null, true);
    }
@@ -63,10 +63,10 @@ const loginMiddleware = (req, res, next) => {
 	
 	console.log(req.body);
 	
-	if(req.body.username === "supper" && req.body.password === "atopiiot")
+	if(req.body.username === "super" && req.body.password === "atopiiot")
 	{
-		console.log("suppervisor login complete");
-		UNAME = "suppervisor";
+		console.log("supervisor login complete");
+		UNAME = "supervisor";
 		next();
 	}
 	else if(req.body.username === "operator" && req.body.password === "default")
